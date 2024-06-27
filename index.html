@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title-header" id="title-header">Grading System</h1>
+    <div class="grades-container" id="grades-container">
+        <label class="classes-label" for="courseOne">Math</label>
+        <input class="classes-input" name="classOneInput" type="number" id="courseOne"><br>
+        
+        <label class="classes-label" for="courseTwo">English</label>
+        <input class="classes-input" name="classTwoInput" type="number" id="courseTwo"><br>
+
+        <label class="classes-label" for="courseThree">Science</label>
+        <input class="classes-input" name="classThreeInput" type="number" id="courseThree"><br>
+
+        <label class="classes-label" for="courseFour">Gym</label>
+        <input class="classes-input" name="classFourInput" type="number" id="courseFour"><br>
+
+        <label class="classes-label" for="courseFive">Elective</label>
+        <input class="classes-input" name="classFiveInput" type="number" id="courseFive"><br>
+
+        <button class="avg-button" type="button" onclick="getTheAverage()">Average</button>
+
+        <button class="letter-grade-button" type="button" onclick="convertToLetter()">Convert to letter</button>
+
+        <button class="min-max-button" type="button" onclick="minAndMax()">Min & Max</button><br>
+
+        <button class="reset-button" type="button" onclick="reset()">Reset</button>
+    </div>
+    <div class="results-container" id="results-container">
+        <p class="average" id="average">Average:</p>
+        <p class="letters" id="letters">Letter Grades:</p>
+        <p class="min" id="min">Min:</p>
+        <p class="max" id="max">Max:</p>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
