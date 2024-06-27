@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Actor&family=Notable&display=swap');
 
+html{
+    background-color: rgb(19, 158, 19);
+}
 .title-header{
     text-align: center;
     padding-top: 20px;
@@ -22,6 +25,7 @@
     margin: auto;
     text-align: center;
     align-items: center;
+    margin-left: 45px;
 }
 .classes-input{
     width: 65px;
@@ -40,7 +44,9 @@
     color: black;
     border-radius: 10em;
     font-size: 15px;
+    font-family: "Actor", sans-serif;
     font-weight: 400;
+    font-style: normal; 
     padding: .5em 1em;
     margin: 2px;
     cursor: pointer;
@@ -69,6 +75,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 0 0 black;
+    letter-spacing: 2px;
 }
 .reset-button:hover{
     transform: translateY(-4px) translateX(-2px);
@@ -77,4 +84,19 @@
 .reset-button:active{
     transform: translateY(2px) translateX(1px);
     box-shadow: 0 0 0 0 black;
+}
+.results-container{
+    float: right;
+    border: 4px solid black;
+    margin-right: 4em;
+    padding: 70px;
+    background-color: aliceblue;
+    text-align:left;
+    border-radius: 15px;
+}
+.average, .letters, .min, .max{
+    font-family: "Actor", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: larger;
 }
