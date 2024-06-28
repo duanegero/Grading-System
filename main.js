@@ -1,3 +1,6 @@
+let moment = require('moment');
+
+
 
 function getTheAverage(){
     let mathGrade = parseFloat(document.getElementById('courseOne').value);
@@ -84,3 +87,11 @@ function reset(){
     document.getElementById('courseFive').value = "";
 
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    function updateTime() {
+        document.getElementById('dateAndTime').innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+});
