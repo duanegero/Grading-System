@@ -2,7 +2,7 @@ let moment = require('moment');
 
 
 
-function getTheAverage(){
+export function getTheAverage(){
     let mathGrade = parseFloat(document.getElementById('courseOne').value);
     let engGrade = parseFloat(document.getElementById('courseTwo').value);
     let sciGrade = parseFloat(document.getElementById('courseThree').value);
@@ -16,7 +16,7 @@ function getTheAverage(){
     document.getElementById('average').innerHTML = `Average: ${average}`;
 }
 
-function convertToLetter(){
+export function convertToLetter(){
     let mathGrade = parseFloat(document.getElementById('courseOne').value);
     let engGrade = parseFloat(document.getElementById('courseTwo').value);
     let sciGrade = parseFloat(document.getElementById('courseThree').value);
@@ -47,7 +47,7 @@ function convertToLetter(){
     document.getElementById('letters').innerHTML = `Letter Grades: ${letterGrades}`;
 }
 
-function minAndMax(){
+export function minAndMax(){
     let mathGrade = parseFloat(document.getElementById('courseOne').value);
     let engGrade = parseFloat(document.getElementById('courseTwo').value);
     let sciGrade = parseFloat(document.getElementById('courseThree').value);
@@ -75,7 +75,7 @@ function minAndMax(){
     document.getElementById('max').innerHTML = `Max: ${max}`;
 }
 
-function reset(){
+export function reset(){
     document.getElementById('max').innerHTML = "Max:";
     document.getElementById('min').innerHTML = "Min:";
     document.getElementById('letters').innerHTML = "Letter Grades:"
@@ -95,3 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
     updateTime();
     setInterval(updateTime, 1000);
 });
+
+window.getTheAverage = getTheAverage;
+window.convertToLetter = convertToLetter;
+window.minAndMax = minAndMax;
+window.reset = reset;
